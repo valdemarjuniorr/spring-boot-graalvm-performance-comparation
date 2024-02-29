@@ -12,6 +12,7 @@ To generate the performance graph using JVM, use the following command:
 $ make jvm
 ```
 It will generate an image with the result of `500k` requests as below:
+
 ![jvm.png](assets/jvm.png)
 
 ### Native Image
@@ -21,6 +22,7 @@ To generate the performance graph using Native Image, use the following command:
 $ make native
 ````
 It will generate an image with the result of `500k` requests as below:
+
 ![jvm.png](assets/native.png)
 
 ## Features
