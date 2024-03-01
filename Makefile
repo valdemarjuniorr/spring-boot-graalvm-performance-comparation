@@ -1,6 +1,6 @@
 # It will run performance test on JVM
 jvm:
-	mvn spring-boot:run
+	mvn clean package -DskipTests
 	./scripts/record.sh jvm
 
 # It will run performance test on native image
