@@ -34,6 +34,8 @@ $ make native
 ````
 It will generate an image with the result of `500k` requests as below:
 
+![jvm.png](assets/native.png)
+
 As [hey](https://github.com/rakyll/hey) reports the average, when the test as made, was `Requests/sec: 11751.1066`.
 
 ## Conclusion
