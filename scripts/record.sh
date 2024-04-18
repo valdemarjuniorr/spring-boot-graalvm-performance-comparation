@@ -9,7 +9,7 @@ export PERF_PID=$!
 
 echo "PID of the process: $PERF_PID"
 # generate a graph showing the CPU and memory usage of the process
-psrecord $PERF_PID --plot plot$(date +%s).png --include-children &
+psrecord $PERF_PID --plot plot-$1-$(date +%s).png --include-children &
 
 # wait for the application to start
 while [ "$(curl -s -o /dev/null -L -w ''%{http_code}'' http://localhost:8080/products)" != "200" ]; do sleep 0.001; done
